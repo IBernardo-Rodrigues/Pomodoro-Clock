@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pomodoro Clock</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/eee253c7b4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  
+  <header>
+    <h1 class="title">Pomodoro</h1>
+    <i class=" fas fa-bars menu-icon"></i>
+    
+    <nav class="navbar">
+      <h2 class="navbar-title">Pomodoro</h2>
+      <div class="line"></div>
+      
+      <ul class="navbar-menu">
+        <li class="menu-item"><i class="fas fa-tasks task-icon"></i> <a href="tasks/tasks.html" rel="next" target="_self"> Tarefas</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <p class="control-times">0/4</p>
+    <div class="clock-circle">
+      <p>00:00</p>
+    </div>
+    
+    <button class="btn-play-pause">
+      Play
+    </button>
+  </main>
+  
+  <footer>
+    <p class="footer-title">
+      &copy; Bernardo Rodrigues - 2022
+    </p>
+  </footer>
+  
+  <div class="modal modal-rest">
+
+    <div class="modal-content modal-rest-content">
+      
+        <h3 class="content-title">
+          Hora de descansar!
+        </h3>
+        
+        <p class="content-text">
+          Chegou a hora de descansar, aproveite!!
+        </p>
+        
+        <button class="content-signout">Ok</button>
+
+     
+    </div>
+    
+  </div>
+  
+  <div class="modal modal-work">
+
+    <div class="modal-content modal-work-content">
+      <h3 class="content-title">
+          Volte ao trabalho!
+        </h3>
+        
+        <p class="content-text">
+          Volte para o trabalho! Não esqueça de manter o foco!
+        </p>
+        
+        <button class="content-signout">Ok</button>
+
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+  
+</body>
+</html>
+
