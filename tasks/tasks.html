@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="PT-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+
+  <title>Pomodoro Clock</title>
+
+  <link rel="stylesheet" href="tasks.css">
+  <script src="https://kit.fontawesome.com/52a12616e0.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
+  <header>
+    <h1 class="title">Pomodoro</h1>
+    <i class=" fas fa-bars menu-icon"></i>
+
+    <nav class="navbar">
+      <h2 class="navbar-title">Pomodoro</h2>
+      <div class="line"></div>
+
+      <ul class="navbar-menu">
+        <li class="menu-item"><i class="fa-solid fa-clock clock-icon"></i> <a href="../index.html" rel="next" target="_self">Relógio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="main-title">Tarefas</h2>
+    
+    <section class="tasks">
+      <ul class="all-tasks">
+
+      </ul>
+      
+      <div class="new-task-area">
+        <button class="btn-new-task">
+         + New task
+        </button>
+      </div>
+      
+    </section>
+    
+    <div class="modal-new-task">
+      <div class="modal-nt-content">
+        <h2 class="modal-title">Nova tarefa</h2>
+        
+        <label class="sr-only">Sua tarefa</label>
+        <input type="text" placeholder="Sua tarefa" class="user-text">
+        
+        <div class="buttons-nt-area">
+          <button class="btn-nt btn-nt-cancel">Cancelar</button>
+          <button class="btn-nt btn-nt-add">Adicionar</button>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p class="footer-title">
+      &copy; Bernardo Rodrigues - 2022
+    </p>
+  </footer>
+
+  <script src="tasks.js"></script>
+
 </body>
 
 </html>
+
+<!-- ajustar estrutura html das tarefas
