@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Pomodoro Clock</title>
-
+  
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/clock-ico.ico">
+  
   <link rel="stylesheet" href="tasks.css">
+  
   <script src="https://kit.fontawesome.com/52a12616e0.js" crossorigin="anonymous"></script>
 
 </head>
@@ -38,26 +41,27 @@
       
       <div class="new-task-area">
         <button class="btn-new-task">
-         + New task
+         + Nova tarefa
         </button>
       </div>
       
     </section>
     
-    <div class="modal-new-task">
-      <div class="modal-nt-content">
-        <h2 class="modal-title">Nova tarefa</h2>
-        
-        <label class="sr-only">Sua tarefa</label>
-        <input type="text" placeholder="Sua tarefa" class="user-text">
-        
-        <div class="buttons-nt-area">
-          <button class="btn-nt btn-nt-cancel">Cancelar</button>
-          <button class="btn-nt btn-nt-add">Adicionar</button>
+    <section class="modals">
+      <div class="modal-new-task">
+        <div class="modal-nt-content">
+          <h2 class="modal-title">Nova tarefa</h2>
+          
+          <label class="sr-only">Sua tarefa</label>
+          <input type="text" placeholder="Sua tarefa" class="user-text">
+          
+          <div class="buttons-nt-area">
+            <button class="btn-nt btn-nt-cancel">Cancelar</button>
+            <button class="btn-nt btn-nt-add">Adicionar</button>
+          </div>
         </div>
       </div>
-    </div>
-    
+    </section>
   </main>
 
   <footer>
@@ -71,5 +75,3 @@
 </body>
 
 </html>
-
-<!-- ajustar estrutura html das tarefas
